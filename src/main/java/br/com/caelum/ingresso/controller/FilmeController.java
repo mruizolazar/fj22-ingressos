@@ -18,10 +18,8 @@ import java.util.Optional;
 @Controller
 public class FilmeController {
 
-
     @Autowired
     private FilmeDao filmeDao;
-
 
     @GetMapping({"/admin/filme", "/admin/filme/{id}"})
     public ModelAndView form(@PathVariable("id") Optional<Integer> id, Filme filme){
